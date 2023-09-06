@@ -1,3 +1,4 @@
+//Dados dos jogos
 const games = [
     {
         id: 1,
