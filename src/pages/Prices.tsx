@@ -10,69 +10,75 @@ export default function Prices() {
     const dynamicParam3 = router.query.param3;
     const dynamicParam4 = router.query.param4;
     console.log(dynamicParam3);
-    
-    
+
+
 
     return (
         <div className="prices">
             <Nav />
             <div className='texto-price'>
                 <h3>{dynamicParam}</h3>
-                <img src={dynamicParam2} alt="" className='img-test'/>
+                <img src={dynamicParam2} alt="" className='img-test' />
                 <h1>PLANOS DE JOGOS</h1>
-                <p>Você pode fazer o plano de assinatura de todos os jogos ou apênas do jogo que quer jogar no momento via Streaming, caso ainda esteja em dúvida de o jogo é bom, teste gratuitamente!</p>
+                <p className='big-text'>Você pode fazer o plano de assinatura de todos os jogos ou apênas do jogo que quer jogar no momento via Streaming, caso ainda esteja em dúvida de o jogo é bom, teste gratuitamente!</p>
             </div>
             <div className='container itens-price'>
                 <div className='row'>
-                    <div className='col col-lg-4 col-6'>
-                        <div className="card">
-
-                            <div className="card-body card-price">
-                                <h5 className="card-title">Demo (Jogue por 30 minutos)</h5>
-                                <p className="card-text">R$0,00</p>
-                                <a href="#" className="btn btn-primary">BAIXAR</a>
+                    <div className="col">
+                        <div className="card mb-4 rounded-3 shadow-sm">
+                            <div className="card-header py-3">
+                                <h4 className="my-0 fw-normal">Grátis</h4>
                             </div>
-                            <ul className="list-group list-group-flush">
-                                <li className="list-group-item">✔️Jogue sem baixar</li>
-                                <li className="list-group-item">❌Jogue por tempo ilimitado</li>
-                                <li className='list-grup-item'>❌Tenha acesso a todo nosso catálogo</li>
-                                <li className="list-group-item">❌Resosulção 4K</li>
-                            </ul>
+                            <div className="card-body">
+                                <h1 className="card-title pricing-card-title">R$0<small className="text-muted fw-light">/mês</small></h1>
+                                <ul className="list-unstyled mt-3 mb-4">
+                                    <li>teste grátis</li>
+                                    <li>jogue por 30 minutos</li>
+                                    <li>Jogue online</li>
+                                    <li>Acesso por streaming</li>
+                                </ul>
+                                <button type="button" className="w-100 btn btn-lg btn-outline-primary">TESTAR</button>
+                            </div>
                         </div>
                     </div>
-                    <div className='col col-lg-4 col-6'>
-                        <div className="card">
-
-                            <div className="card-body card-price">
-                                <h5 className="card-title">Jogar online todo o catálogo (Streaming)</h5>
-                                <p className="card-text">R$49,90 por mês</p>
-                                <a href="#" className="btn btn-primary">BAIXAR</a>
+                    <div className="col">
+                        <div className="card mb-4 rounded-3 shadow-sm">
+                            <div className="card-header py-3">
+                                <h4 className="my-0 fw-normal">Jogo único</h4>
                             </div>
-                            <ul className="list-group list-group-flush">
-                                <li className="list-group-item">✔️Jogue sem baixar</li>
-                                <li className="list-group-item">✔️Jogue por tempo ilimitado</li>
-                                <li className='list-grup-item'>✔️Tenha acesso a todo nosso catálogo</li>
-                                <li className="list-group-item">✔️Resosulção 4K</li>
-                            </ul>
+                            <div className="card-body">
+                                <h1 className="card-title pricing-card-title">R$10<small className="text-muted fw-light">/mês</small></h1>
+                                <ul className="list-unstyled mt-3 mb-4">
+                                    <li>Jogue o jogo ilimitado</li>
+                                    <li>jogue online</li>
+                                    <li>Pague pelo que usar</li>
+                                    <li>Acesso por streaming</li>
+                                </ul>
+                                <button type="button" className="w-100 btn btn-lg btn-outline-primary">COMPRAR</button>
+                            </div>
                         </div>
                     </div>
-                    <div className='col col-lg-4 col-6'>
-                        <div className="card">
-
-                            <div className="card-body card-price">
-                                <h5 className="card-title">Jogar online (Streaming)</h5>
-                                <p className="card-text">R$9,90 por mês</p>
-                                <a href="#" className="btn btn-primary">BAIXAR</a>
+                    <div className="col">
+                        <div className="card mb-4 rounded-3 shadow-sm">
+                            <div className="card-header py-3">
+                                <h4 className="my-0 fw-normal">Todo catálogo</h4>
                             </div>
-                            <ul className="list-group list-group-flush">
-                                <li className="list-group-item">✔️Jogue sem baixar</li>
-                                <li className="list-group-item">✔️Jogue por tempo ilimitado</li>
-                                <li className='list-grup-item'>❌Tenha acesso a todo nosso catálogo</li>
-                                <li className="list-group-item">❌Resosulção 4K</li>
-                            </ul>
+                            <div className="card-body">
+                                <h1 className="card-title pricing-card-title">R$50<small className="text-muted fw-light">/mês</small></h1>
+                                <ul className="list-unstyled mt-3 mb-4">
+                                    <li>Todo catálogo Ilimitado</li>
+                                    <li>jogue online</li>
+                                    <li>Pague pelo que usar</li>
+                                    <li>Acesso por streaming</li>
+                                </ul>
+                                <button type="button" className="w-100 btn btn-lg btn-outline-primary">COMPRAR</button>
+                            </div>
                         </div>
                     </div>
+
                 </div>
+
+                
             </div>
             <Footer />
         </div>

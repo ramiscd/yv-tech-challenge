@@ -98,6 +98,12 @@ li {
   flex-wrap: wrap;
   gap: 16px; /* Espaçamento entre os cards */
 }
+.th1{
+  width: 34%;
+}
+.th2{
+  width: 22%;
+}
 
 
 

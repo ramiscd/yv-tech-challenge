@@ -15,7 +15,7 @@ const games = [
         id: 3,
         name: "Sea and Stars",
         img: "jogo3.jpg",
-        category: "luta"
+        category: "aventura"
     },
     {
         id: 4,
@@ -27,13 +27,13 @@ const games = [
         id: 5,
         name: "PGA Tour 2k23",
         img: "jogo5.jpg",
-        category: "luta"
+        category: "esporte"
     },
     {
         id: 6,
         name: "Moving Out 2",
         img: "jogo6.jpg",
-        category: "luta"
+        category: "aventura"
     },
     {
         id: 7,
